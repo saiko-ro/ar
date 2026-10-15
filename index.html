@@ -1,17 +1,372 @@
 <!DOCTYPE html>
-<html lang="ja">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiky</title>
     <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
 </head>
 
 <body>
     <a-scene>
-        <a-box position="0 0 -3" color="skyblue">
-        </a-box>
+
+        <a-sky color="Lightgray"></a-sky>
+        <a-plane
+            rotation="-90 0 0"
+            width="10"
+            height="10"
+            color="darkslategray">
+        </a-plane>
+        <a-assets>
+            <img id="green" src="../assets/images/iii.webp" alt="">
+            <img id="kon" src="../assets/images/kon.jpg" alt="">
+        </a-assets>
+
+        <a-entity
+            position="0 2 3"
+            animation="property: rotation; to: 360 360 0; loop: true; easing: linear; dur: 3000" >
+            
+            <a-octahedron
+                position="0 0 0"
+                radius="0.7"
+                scale="1 2 1"
+                color="lightgreen"
+                material="src:#green">
+            </a-octahedron>
+            <a-octahedron
+                position="0 0 0"
+                radius="0.7"
+                scale="2 1 1"
+                color="lightgreen"
+                material="src:#green">
+            </a-octahedron>
+            <a-octahedron
+                position="0 0 0"
+                rotation="0 0 45"
+                radius="0.7"
+                scale="1 2 1"
+                color="lightgreen"
+                material="src:#green">
+            </a-octahedron>
+            <a-octahedron
+                position="0 0 0"
+                rotation="0 0 -45"
+                radius="0.7"
+                scale="1 2 1"
+                color="lightgreen"
+                material="src:#green">
+            </a-octahedron>
+            <a-octahedron
+                position="0 0 0"
+                rotation="0 90 0"
+                radius="0.7"
+                scale="2 1 1"
+                color="lightgreen"
+                material="src:#green">
+            </a-octahedron>
+            <a-octahedron
+                position="0 0 0"
+                rotation="0 90 45"
+                radius="0.7"
+                scale="1 2 1"
+                color="lightgreen"
+                material="src:#green">
+            </a-octahedron>
+            <a-octahedron
+                position="0 0 0"
+                rotation="0 90 -45"
+                radius="0.7"
+                scale="1 2 1"
+                color="lightgreen"
+                material="src:#green">
+            </a-octahedron>
+            <a-octahedron
+                position="0 0 0"
+                rotation="0 90 0"
+                radius="0.7"
+                scale="2 1 1"
+                color="lightgreen"
+                material="src:#green">
+            </a-octahedron>
+            <a-octahedron
+                position="0 0 0"
+                rotation="0 90 45"
+                radius="0.7"
+                scale="1 2 1"
+                color="lightgreen"
+                material="src:#green">
+            </a-octahedron>
+            <a-octahedron
+                position="0 0 0"
+                rotation="0 90 -45"
+                radius="0.7"
+                scale="1 2 1"
+                color="lightgreen"
+                material="src:#green">
+            </a-octahedron>
+            <a-octahedron
+                position="0 0 0"
+                rotation="90 90 0"
+                radius="0.7"
+                scale="2 1 1"
+                color="lightgreen"
+                material="src:#green">
+            </a-octahedron>
+            <a-octahedron
+                position="0 0 0"
+                rotation="90 90 45"
+                radius="0.7"
+                scale="1 2 1"
+                color="lightgreen"
+                material="src:#green">
+            </a-octahedron>
+            <a-octahedron
+                position="0 0 0"
+                rotation="90 90 -45"
+                radius="0.7"
+                scale="1 2 1"
+                color="lightgreen"
+                material="src:#green">
+            </a-octahedron>
+        </a-entity>a
+
+
+        <a-entity position="3 2 0"
+        animation="property: rotation;
+                         to: 360 360 0;
+                         loop: true; 
+                         easing: linear;
+                          dur: 5000">
+            <a-cylinder
+                position="0 0 0"
+                radius="0.2"
+                scale="1 2 1"
+                color="lightblue"
+                material="src:#green">
+            </a-cylinder>
+            <a-cylinder
+                position="0 0 0"
+                rotation="45 45 0"
+                radius="0.2"
+                scale="1 2 1"
+                color="lightblue"
+                material="src:#green">
+            </a-cylinder>
+            <a-cylinder
+                position="0 0 0"
+                rotation="0 0 45"
+                radius="0.2"
+                scale="1 2 1"
+                color="lightblue"
+                material="src:#green">
+            </a-cylinder>
+            <a-cylinder
+                position="0 0 0"
+                rotation="0 0 -45"
+                radius="0.2"
+                scale="1 2 1"
+                color="lightblue"
+                material="src:#green">
+            </a-cylinder>
+            <a-cylinder
+                position="0 0 0"
+                rotation="0 90 45"
+                radius="0.2"
+                scale="1 2 1"
+                color="lightblue"
+                material="src:#green">
+            </a-cylinder>
+            <a-cylinder
+                position="0 0 0"
+                rotation="-45 45 0"
+                radius="0.2"
+                scale="1 2 1"
+                color="lightblue"
+                material="src:#green">
+            </a-cylinder>
+            <a-cylinder
+                position="0 0 0"
+                rotation="45 -45 0"
+                radius="0.2"
+                scale="1 2 1"
+                color="lightblue"
+                material="src:#green">
+            </a-cylinder>
+            <a-cylinder
+                position="0 0 0"
+                rotation="0 45 -45"
+                radius="0.2"
+                scale="1 2 1"
+                color="lightblue"
+                material="src:#green">
+            </a-cylinder>
+            <a-cylinder
+                position="0 0 0"
+                rotation="0 90 -45"
+                radius="0.2"
+                scale="1 2 1"
+                color="lightblue"
+                material="src:#green">
+            </a-cylinder>
+            <a-cylinder
+                position="0 0 0"
+                rotation="90 90 0"
+                radius="0.2"
+                scale="1 2 1"
+                color="lightblue"
+                material="src:#green">
+            </a-cylinder>
+            <a-cylinder
+                position="0 0 0"
+                rotation="90 90 45"
+                radius="0.2"
+                scale="1 2 1"
+                color="lightblue"
+                material="src:#green">
+            </a-cylinder>
+            <a-cylinder
+                position="0 0 0"
+                rotation="90 90 -45"
+                radius="0.2"
+                scale="1 2 1"
+                color="lightblue"
+                material="src:#green">
+            </a-cylinder>
+            <a-cylinder
+                position="0 0 0"
+                rotation="90 0 0"
+                radius="0.2"
+                scale="1 2 1"
+                color="lightblue"
+                material="src:#green">
+            </a-cylinder>
+        </a-entity>
+
+        <a-entity position="0 2 -3"
+        animation ="property: rotation;
+                         to: 0 360 0;
+                         loop: true; 
+                         easing: linear;
+                          dur: 5000">
+        <a-torus
+        scale="1 1 0.5"
+        radius="1"
+        radius-tubular="0.05"
+        ></a-torus>
+
+        <a-torus
+        rotation="90 0 0"
+        scale="1 1 0.5"
+        radius="1"
+        radius-tubular="0.05"
+        ></a-torus>
+
+        <a-torus
+        rotation="45 0 90"
+        scale="1 1 0.5"
+        radius="1"
+        radius-tubular="0.05"
+        ></a-torus>
+
+        <a-torus
+        rotation="-45 0 90"
+        scale="1 1 0.5"
+        radius="1"
+        radius-tubular="0.05"
+        ></a-torus>
+
+        <a-torus
+        rotation="0 90 90"
+        scale="1 1 0.5"
+        radius="1"
+        radius-tubular="0.05"
+        ></a-torus>
+
+        <a-torus
+        rotation="45 90 90"
+        scale="1 1 0.5"
+        radius="1"
+        radius-tubular="0.05"
+        ></a-torus>
+
+        <a-torus
+        rotation="-45 90 90"
+        scale="1 1 0.5"
+        radius="1"
+        radius-tubular="0.05"
+        ></a-torus>
+
+        <a-torus
+        rotation="0 45 0"
+        scale="1 1 0.5"
+        radius="1"
+        radius-tubular="0.05"
+        ></a-torus>
+        <a-torus
+        rotation="0 -45 0"
+        scale="1 1 0.5"
+        radius="1"
+        radius-tubular="0.05"
+        ></a-torus>
+        <a-torus
+        rotation="45 45 0"
+        scale="1 1 0.5"
+        radius="1"
+        radius-tubular="0.05"
+        ></a-torus>
+        <a-torus
+        rotation="-45 45 0"
+        scale="1 1 0.5"
+        radius="1"
+        radius-tubular="0.05"
+        ></a-torus>
+        <a-torus
+        rotation="45 -45 0"
+        scale="1 1 0.5"
+        radius="1"
+        radius-tubular="0.05"
+        ></a-torus>
+        <a-torus
+        rotation="-45 -45 0"
+        scale="1 1 0.5"
+        radius="1"
+        radius-tubular="0.05"
+        ></a-torus>
+
+
+
+
+
+
+
+
+
+       
+        </a-entity>
+
+            <a-cylinder
+            position="0 0.15 -3"
+            radius="1"
+            height="0.3"
+            color="gray"
+            material="src:#kon"
+            ></a-cylinder>
+
+            <a-cylinder
+            position="0 0.15 3"
+            radius="1"
+            height="0.3"
+            color="gray"
+            material="src:#kon"
+            ></a-cylinder>
+
+            <a-cylinder
+            position="3 0.15 0"
+            radius="1"
+            height="0.3"
+            color="gray"
+            material="src:#kon"
+            ></a-cylinder>
     </a-scene>
 </body>
-
 </html>
