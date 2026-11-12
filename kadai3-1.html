@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARエネルギーボール</title>
+<script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aframe-extras@7.6.0/dist/aframe-extras.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/projapayuri/aframe-gesture-hands@v0.9.2/aframe-gesture-hands.js"></script>
+
+</head>
+<body>
+<a-scene hands id="scene">
+<a-sphere
+    id="ball"
+    position="0 1.5 -3"
+    radius="0.5"
+    color="#00ccff"
+    emissive="#003344">
+</a-sphere>
+<a-camera position="0 0 0"></a-camera>
+</a-scene>
+<script>
+  const scene = document.querySelector("#scene");
+  const ball = document.querySelector("#ball");
+  function checkHand() {
+    const hands = scene.components.hands;
+    if (hands && hands.isPointOnEntity) {
+      const near = hands.isPointOnEntity(8, ball);
+      if (near) {
+
+        ball.setAttribute("emissive", "#00ffff");
+        ball.setAttribute("scale", "1.3 1.3 1.3");
+      } else {
+
+        ball.setAttribute("emissive", "#003344");
+        ball.setAttribute("scale", "1 1 1");
+      }
+    }
+    requestAnimationFrame(checkHand);
+  }
+  scene.addEventListener("loaded", () => {
+    checkHand();
+  });
+</script>
+</body>
+</html>
+ 
